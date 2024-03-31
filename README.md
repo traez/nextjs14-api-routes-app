@@ -52,7 +52,7 @@ Throughout the video, you'll gain hands-on experience as we cover all aspects of
 
 ### What I learned
 
-- Resolving `Parsing error: Cannot find module 'next/babel'` in Next.js. To do so, Update `.eslintrc.json` with the following configuration: `"extends": ["next/babel","next/core-web-vitals"]`  
+- Resolving `Parsing error: Cannot find module 'next/babel'` in Next.js. To do so, Update `.eslintrc.json` with the following configuration: `"extends": ["next","next/core-web-vitals"]`  
 - Using `"@/*"` imports for project-wide paths. In `jsconfig.json`, the `"@/*": ["./src/*"]` mapping allows imports starting with "`@/"` to locate files within the `"./src/"` directory.
 - Confirmation dialog boxes with `window.confirm()`. Use the `window.confirm()` method to display a confirmation message and get a user's decision (true for "OK", false for "Cancel").
 - Handling form submissions with `onSubmit`. Utilize the `onSubmit` event handler within HTML forms to execute code when a form is submitted.
