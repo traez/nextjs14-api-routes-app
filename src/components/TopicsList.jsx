@@ -15,6 +15,7 @@ const getTopics = async () => {
     return res.json();
   } catch (error) {
     console.log("Error loading topics: ", error);
+    return { topics: [] }; 
   }
 };
 
@@ -23,7 +24,7 @@ export default async function TopicsList() {
 
   return (
     <>
-      {topics.map((t) => (
+      {topics && topics.map((t) => (
         <div
           key={t._id}
           className="p-4 border border-slate-300 my-3 flex justify-between gap-5 items-start"
